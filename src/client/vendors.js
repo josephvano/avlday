@@ -1,9 +1,14 @@
 // Polyfills
-//import 'es6-shim'
+import 'es6-shim'
 
 // these modules are what are in 'angular2/bundles/angular2-polyfills' so don't use that here)
 import 'es6-promise'
 import 'zone.js/lib/browser/zone-microtask'
+
+if("production" === process.env.ENV){
+  const ngCore = require("angular2/core");
+  ngCore.enableProdMode();
+}
 
 // package for proposal ES2016, decorators
 import 'reflect-metadata'
