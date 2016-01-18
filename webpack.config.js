@@ -5,7 +5,7 @@ module.exports = {
   watch: true,
   entry: {
     app: "./src/client/app.js",
-    vendor: ["jquery"]
+    vendor: ["./src/client/vendors.js"]
   },
 
   output: {
@@ -22,10 +22,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015']
-        }
+        loader: 'babel'
       },
       {
         test: /\.sass$/,
