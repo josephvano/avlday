@@ -1,0 +1,34 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3201558, 2016-04-10T18:42:07-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Veneer by Yellow Design Studio
+ * URL: http://www.myfonts.com/fonts/yellow-design/veneer/regular/
+ * 
+ * Webfont: ThirstyRoughLtTwo by Yellow Design Studio
+ * URL: http://www.myfonts.com/fonts/yellow-design/thirsty-rough/light-two/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3201558
+ * Licensed pageviews: 500,000
+ * Webfonts copyright: Copyright (c) 2012 by Yellow Design Studio. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30da16");
+
+  
+@font-face {font-family: 'Veneer';src: url('webfonts/30DA16_0_0.eot');src: url('webfonts/30DA16_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30DA16_0_0.woff2') format('woff2'),url('webfonts/30DA16_0_0.woff') format('woff'),url('webfonts/30DA16_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ThirstyRoughLtTwo';src: url('webfonts/30DA16_1_0.eot');src: url('webfonts/30DA16_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30DA16_1_0.woff2') format('woff2'),url('webfonts/30DA16_1_0.woff') format('woff'),url('webfonts/30DA16_1_0.ttf') format('truetype');}
+ 

@@ -1,0 +1,38 @@
+@import "../styles/common";
+
+$items: 5
+$total: 800
+
+nav.affix
+  top: 0
+  width: 100%
+  margin: 0
+  background-color: $blue-1
+  border-bottom: solid 4px $grey-1
+  z-index: 999
+  color: White
+
+  .nav-item
+    font-size: 18px
+
+  .nav-icon
+    width: 64px
+    height: 64px
+
+
+nav
+  padding: 20px 0
+  margin: 20px 0
+
+  ul
+    list-style-type: none
+    width: #{$total}px
+    margin: 0 auto
+    padding: 0
+    +clearfix
+
+    li
+      float: left
+      width: #{($total / $items)}px
+      text-align: center
+

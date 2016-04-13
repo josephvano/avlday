@@ -2,3 +2,5 @@ node_modules/
 lib/
 build/
 *.log
+.DS_Store
+typings/
