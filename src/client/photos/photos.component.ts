@@ -55,6 +55,7 @@ export class PhotosComponent{
     this.photos.push( new Photo(4, "Joey", "4.jpg", "Indialantic") );
     this.photos.push( new Photo(5, "Joey / Emma", "5.jpg", "PJ 20 at Alpine Valley") );
     this.photos.push( new Photo(6, "Joey / Emma", "6.jpg", "Jackson Hole") );
+    this.photos.push( new Photo(7, "Joey / Emma", "7.jpg", "Jackson Hole") );
   }
 
   prev(){
