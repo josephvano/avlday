@@ -8,9 +8,6 @@ import { WebLinkComponent, MapLinkComponent } from "./webLink.component";
   template: `
   <div id="hotels" class="area hotels">
     <div class="container">
-      <aside>
-        <img src="/images/grandbohemian.jpg" alt="Grand Bohemian" title="Grand Bohemian" />
-      </aside>
       <section>
         <h2>Hotels</h2>
         <p>
@@ -26,13 +23,11 @@ import { WebLinkComponent, MapLinkComponent } from "./webLink.component";
               <h4>Grand Bohemian</h4>
               <ul>
                 <li>
-                  <a class="btn btn-primary" target="_blank" href="https://goo.gl/3e06a6">Google Map
-                  <span class="glyphicon glyphicon-map-marker"></span>
-  </a>
+                  <MapLink link="https://goo.gl/3e06a6"></MapLink>
                 </li>
-                <a class="btn btn-primary" target="_blank" href="http://www.grandbohemianhotel.com/">Website
-                  <span class="glyphicon glyphicon-globe"></span>
-                </a>
+                <li>
+                  <WebLink link="http://www.grandbohemianhotel.com/"></WebLink>
+                </li>
               </ul>
             </li>
             <li>
@@ -42,7 +37,7 @@ import { WebLinkComponent, MapLinkComponent } from "./webLink.component";
                     <MapLink link="https://goo.gl/FpCFg5"></MapLink>
                   </li>
                  <li>
-                  <WebLink link="http://embassysuites3.hilton.com/en/hotels/florida/embassy-suites-by-hilton-orlando-downtown-MCODTES/index.html"></WebLink>
+                    <WebLink link="http://embassysuites3.hilton.com/en/hotels/florida/embassy-suites-by-hilton-orlando-downtown-MCODTES/index.html"></WebLink>
                   </li>
               </ul>
             </li>

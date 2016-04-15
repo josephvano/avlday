@@ -9,14 +9,14 @@ webpackJsonp([0],{
 	
 	var _main = __webpack_require__(228);
 	
-	__webpack_require__(250);
+	__webpack_require__(251);
 	
 	console.log("Application main entry");
 	
 	(0, _browser.bootstrap)(_main.MainComponent);
 	
-	__webpack_require__(259);
 	__webpack_require__(260);
+	__webpack_require__(261);
 
 /***/ },
 
@@ -38,11 +38,11 @@ webpackJsonp([0],{
 	var nav_component_1 = __webpack_require__(231);
 	var reception_component_1 = __webpack_require__(236);
 	var hotels_component_1 = __webpack_require__(238);
-	var music_component_1 = __webpack_require__(241);
-	var splash_component_1 = __webpack_require__(242);
-	var photos_component_1 = __webpack_require__(244);
-	var footer_component_1 = __webpack_require__(246);
-	var registry_component_1 = __webpack_require__(248);
+	var music_component_1 = __webpack_require__(242);
+	var splash_component_1 = __webpack_require__(243);
+	var photos_component_1 = __webpack_require__(245);
+	var footer_component_1 = __webpack_require__(247);
+	var registry_component_1 = __webpack_require__(249);
 	var MainComponent = (function () {
 	    function MainComponent() {
 	    }
@@ -97,7 +97,7 @@ webpackJsonp([0],{
 /***/ 230:
 /***/ function(module, exports) {
 
-	module.exports = ".lead {\n  font-family: ThirstyRoughLtTwo;\n  text-align: center;\n  margin: 0; }\n\nheader {\n  background-color: #3c4d67;\n  color: White;\n  padding: 20px 0 20px; }\n\nh1 {\n  margin: 0;\n  color: White;\n  font-family: Veneer, Helvetica, sans-serif;\n  font-weight: normal;\n  font-size: 192px;\n  text-align: center; }\n  h1 small {\n    font-size: 32px;\n    color: #c9cdcc; }\n\nnav {\n  font-family: ThirstyRoughLtTwo;\n  float: left;\n  font-size: 24px;\n  height: 100%; }\n  nav ul {\n    list-style-type: none;\n    margin-bottom: 0;\n    height: 100%; }\n    nav ul:before, nav ul:after {\n      content: \"\";\n      display: table; }\n    nav ul:after {\n      clear: both; }\n    nav ul li {\n      float: left;\n      margin-right: 100px;\n      line-height: 4.5; }\n"
+	module.exports = "@media screen and (max-width: 480px) {\n  h1 {\n    font-size: 36px; } }\n\n.lead {\n  font-family: ThirstyRoughLtTwo;\n  text-align: center;\n  margin: 0; }\n\nheader {\n  background-color: #3c4d67;\n  color: White;\n  padding: 20px 0 20px; }\n\nh1 {\n  margin: 0;\n  color: White;\n  padding: 0 20px;\n  font-family: Veneer, Helvetica, sans-serif;\n  font-weight: normal;\n  font-size: 192px;\n  text-align: center; }\n  h1 small {\n    font-size: 32px;\n    color: #c9cdcc; }\n\nnav {\n  font-family: ThirstyRoughLtTwo;\n  float: left;\n  font-size: 24px;\n  height: 100%; }\n  nav ul {\n    list-style-type: none;\n    margin-bottom: 0;\n    height: 100%; }\n    nav ul:before, nav ul:after {\n      content: \"\";\n      display: table; }\n    nav ul:after {\n      clear: both; }\n    nav ul li {\n      float: left;\n      margin-right: 100px;\n      line-height: 4.5; }\n"
 
 /***/ },
 
@@ -276,8 +276,8 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: "Hotels",
 	            directives: [webLink_component_1.WebLinkComponent, webLink_component_1.MapLinkComponent],
-	            styles: [__webpack_require__(240)],
-	            template: "\n  <div id=\"hotels\" class=\"area hotels\">\n    <div class=\"container\">\n      <aside>\n        <img src=\"/images/grandbohemian.jpg\" alt=\"Grand Bohemian\" title=\"Grand Bohemian\" />\n      </aside>\n      <section>\n        <h2>Hotels</h2>\n        <p>\n          <a target=\"_blank\" href=\"https://goo.gl/3SlGo3\">Google Maps</a> of hotels near Winter Park Farmers Market.\n        </p>\n        <p>\n        We have not reserved a block of rooms for our guests to stay, but we have a few suggestions with websites and google maps below. Those feeling up to an afterparty should choose one of the <a target=\"_blank\" href=\"https://www.youtube.com/watch?v=JGhoLcsr8GA\">Downtown</a> Orlando locations. We are unable to open our home to you, as we live nearly two hours away from all of the festivities. Feel free to call us or our local family members for further lodging suggestions.\n        </p>\n        <div class=\"hotels-list\">\n          <p>Hotels near downtown:</p>\n          <ul>\n            <li>\n              <h4>Grand Bohemian</h4>\n              <ul>\n                <li>\n                  <a class=\"btn btn-primary\" target=\"_blank\" href=\"https://goo.gl/3e06a6\">Google Map\n                  <span class=\"glyphicon glyphicon-map-marker\"></span>\n  </a>\n                </li>\n                <a class=\"btn btn-primary\" target=\"_blank\" href=\"http://www.grandbohemianhotel.com/\">Website\n                  <span class=\"glyphicon glyphicon-globe\"></span>\n                </a>\n              </ul>\n            </li>\n            <li>\n              <h4>Embassy Suites Downtown</h4>\n              <ul>\n                  <li>\n                    <MapLink link=\"https://goo.gl/FpCFg5\"></MapLink>\n                  </li>\n                 <li>\n                  <WebLink link=\"http://embassysuites3.hilton.com/en/hotels/florida/embassy-suites-by-hilton-orlando-downtown-MCODTES/index.html\"></WebLink>\n                  </li>\n              </ul>\n            </li>\n            <li>\n              <h4>Aloft</h4> \n                <ul>\n                  <li>\n                    <MapLink link=\"https://goo.gl/WOy1u7\"></MapLink>\n                  </li>\n                  <li>\n                    <WebLink link=\"http://www.aloftorlandodowntown.com/\"></WebLink>\n                  </li>\n                </ul>\n              </li>\n            <li>\n              <h4>Crowne Plaza</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/F6mD1g\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://goo.gl/QsAqkZ\"></WebLink>\n                </li>\n              </ul>\n            </li>\n          </ul>\n        </div>\n        <div class=\"hotels-list\">\n          <p>Hotels near Farmers Market:</p>\n          <ul>\n            <li>\n              <h4>Alfond Inn</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/EiZa4y\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://www.thealfondinn.com/\"></WebLink>\n                </li>\n              </ul>\n            </li>\n            <li>\n              <h4>Park Plaza Hotel</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/KU0RAK\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://parkplazahotel.com/\"></WebLink>\n                </li>\n              </ul>\n            </li>\n          </ul>\n        </div>\n      </section>\n    </div>\n  </div>\n  "
+	            styles: [__webpack_require__(241)],
+	            template: "\n  <div id=\"hotels\" class=\"area hotels\">\n    <div class=\"container\">\n      <section>\n        <h2>Hotels</h2>\n        <p>\n          <a target=\"_blank\" href=\"https://goo.gl/3SlGo3\">Google Maps</a> of hotels near Winter Park Farmers Market.\n        </p>\n        <p>\n        We have not reserved a block of rooms for our guests to stay, but we have a few suggestions with websites and google maps below. Those feeling up to an afterparty should choose one of the <a target=\"_blank\" href=\"https://www.youtube.com/watch?v=JGhoLcsr8GA\">Downtown</a> Orlando locations. We are unable to open our home to you, as we live nearly two hours away from all of the festivities. Feel free to call us or our local family members for further lodging suggestions.\n        </p>\n        <div class=\"hotels-list\">\n          <p>Hotels near downtown:</p>\n          <ul>\n            <li>\n              <h4>Grand Bohemian</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/3e06a6\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://www.grandbohemianhotel.com/\"></WebLink>\n                </li>\n              </ul>\n            </li>\n            <li>\n              <h4>Embassy Suites Downtown</h4>\n              <ul>\n                  <li>\n                    <MapLink link=\"https://goo.gl/FpCFg5\"></MapLink>\n                  </li>\n                 <li>\n                    <WebLink link=\"http://embassysuites3.hilton.com/en/hotels/florida/embassy-suites-by-hilton-orlando-downtown-MCODTES/index.html\"></WebLink>\n                  </li>\n              </ul>\n            </li>\n            <li>\n              <h4>Aloft</h4> \n                <ul>\n                  <li>\n                    <MapLink link=\"https://goo.gl/WOy1u7\"></MapLink>\n                  </li>\n                  <li>\n                    <WebLink link=\"http://www.aloftorlandodowntown.com/\"></WebLink>\n                  </li>\n                </ul>\n              </li>\n            <li>\n              <h4>Crowne Plaza</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/F6mD1g\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://goo.gl/QsAqkZ\"></WebLink>\n                </li>\n              </ul>\n            </li>\n          </ul>\n        </div>\n        <div class=\"hotels-list\">\n          <p>Hotels near Farmers Market:</p>\n          <ul>\n            <li>\n              <h4>Alfond Inn</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/EiZa4y\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://www.thealfondinn.com/\"></WebLink>\n                </li>\n              </ul>\n            </li>\n            <li>\n              <h4>Park Plaza Hotel</h4>\n              <ul>\n                <li>\n                  <MapLink link=\"https://goo.gl/KU0RAK\"></MapLink>\n                </li>\n                <li>\n                  <WebLink link=\"http://parkplazahotel.com/\"></WebLink>\n                </li>\n              </ul>\n            </li>\n          </ul>\n        </div>\n      </section>\n    </div>\n  </div>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], HotelsComponent);
@@ -309,6 +309,7 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: "MapLink",
 	            inputs: ['link'],
+	            styles: [__webpack_require__(240)],
 	            template: "\n  <a class=\"btn btn-primary\" target=\"_blank\" href=\"{{link}}\">Google Map\n    <span class=\"glyphicon glyphicon-map-marker\"></span>\n  </a>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -323,6 +324,7 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: "WebLink",
 	            inputs: ['link'],
+	            styles: [__webpack_require__(240)],
 	            template: "\n  <a class=\"btn btn-primary\" target=\"_blank\" href=\"{{link}}\">Website\n    <span class=\"glyphicon glyphicon-globe\"></span>\n  </a>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -337,11 +339,18 @@ webpackJsonp([0],{
 /***/ 240:
 /***/ function(module, exports) {
 
-	module.exports = "aside {\n  float: left;\n  margin-right: 50px;\n  padding-top: 10px; }\n\nsection {\n  float: left;\n  width: 700px; }\n\nimg {\n  width: 300px;\n  border: solid 2px #c9cdcc;\n  border-radius: 2px; }\n\n.hotels-list {\n  float: left;\n  width: 350px; }\n  .hotels-list ul {\n    list-style-type: none;\n    margin: 0 0 10px;\n    padding: 0; }\n  .hotels-list ul ul {\n    margin-top: 5px; }\n    .hotels-list ul ul:before, .hotels-list ul ul:after {\n      content: \"\";\n      display: table; }\n    .hotels-list ul ul:after {\n      clear: both; }\n    .hotels-list ul ul li {\n      float: left;\n      margin-right: 10px; }\n"
+	module.exports = "a {\n  width: 120px;\n  text-align: left;\n  position: relative; }\n  a .glyphicon {\n    position: absolute;\n    right: 7px;\n    top: 7px; }\n"
 
 /***/ },
 
 /***/ 241:
+/***/ function(module, exports) {
+
+	module.exports = ".container {\n  padding: 0;\n  background: transparent url(\"/images/grandbohemian.jpg\") 50% 0 no-repeat; }\n\nsection {\n  background-color: rgba(60, 77, 103, 0.7);\n  color: #c9cdcc;\n  padding: 20px; }\n  section:before, section:after {\n    content: \"\";\n    display: table; }\n  section:after {\n    clear: both; }\n\na, a:link {\n  color: White;\n  font-weight: bold; }\n\na:hover {\n  color: #f8f4bc;\n  text-decoration: underline; }\n\nh2, h3, h4 {\n  color: White; }\n\nimg {\n  border: solid 2px #c9cdcc;\n  border-radius: 2px; }\n\n.hotels-list {\n  float: left;\n  margin: 0 10px 10px 0;\n  width: 42%; }\n  .hotels-list ul {\n    list-style-type: none;\n    margin: 0 0 10px;\n    padding: 0; }\n  .hotels-list ul ul {\n    margin-top: 5px; }\n    .hotels-list ul ul:before, .hotels-list ul ul:after {\n      content: \"\";\n      display: table; }\n    .hotels-list ul ul:after {\n      clear: both; }\n    .hotels-list ul ul li {\n      float: left;\n      margin-right: 10px;\n      margin-bottom: 10px; }\n"
+
+/***/ },
+
+/***/ 242:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -372,7 +381,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 242:
+/***/ 243:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -392,7 +401,7 @@ webpackJsonp([0],{
 	    SplashComponent = __decorate([
 	        core_1.Component({
 	            selector: "Splash",
-	            styles: [__webpack_require__(243)],
+	            styles: [__webpack_require__(244)],
 	            template: "\n  <div>\n    <img src=\"/images/splash.jpg\" class=\"splash\" />\n  </div>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -404,14 +413,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 243:
+/***/ 244:
 /***/ function(module, exports) {
 
 	module.exports = ".splash {\n  position: relative;\n  top: -20px; }\n\ndiv {\n  width: 100%;\n  height: 500px;\n  border-top: solid 4px #c9cdcc;\n  border-bottom: solid 4px #c9cdcc;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  background-color: #c9cdcc; }\n"
 
 /***/ },
 
-/***/ 244:
+/***/ 245:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
@@ -461,7 +470,7 @@ webpackJsonp([0],{
 	    PhotosComponent = __decorate([
 	        core_1.Component({
 	            selector: "Photos",
-	            styles: [__webpack_require__(245)],
+	            styles: [__webpack_require__(246)],
 	            template: "\n  <div id=\"photos\" class=\"area\">\n    <div class=\"container\">\n      <h2>Photos</h2>\n\n        <div id=\"carousel\" class=\"carousel slide\">\n            <!-- Indicators -->\n            <ol class=\"carousel-indicators\">\n              <li *ngFor=\"#photo of photos\" data-target=\"#carousel\" [attr.data-slide-to]=\"photo.num\" [attr.class]=\"photo.num == 0 ? 'active' : ''\"></li>\n            </ol>\n\n            <!-- Wrapper for slides -->\n            <div class=\"carousel-inner\" role=\"listbox\">\n\n              <div *ngFor=\"#photo of photos\" [attr.class]=\"photo.num == 0 ? 'active item' : 'item'\">\n                <img src=\"/images/photos/{{photo.file}}\" alt=\"{{photo.caption}}\" />\n                    <div class=\"carousel-caption\">\n                      <h3>{{photo.title}}</h3>\n                      <p>{{photo.caption}}</p>\n                    </div>\n              </div>\n\n            </div>\n\n            <!-- Controls -->\n            <a (click)=\"prev()\" class=\"left carousel-control\" data-slide=\"prev\">\n              <span class=\"glyphicon glyphicon-chevron-left\"></span>\n            </a>\n            <a (click)=\"next()\" class=\"right carousel-control\" data-slide=\"next\">\n              <span class=\"glyphicon glyphicon-chevron-right\"></span>\n            </a>\n        </div>\n    </div>\n  </div>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -474,14 +483,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 245:
+/***/ 246:
 /***/ function(module, exports) {
 
 	module.exports = "#carousel {\n  height: 400px;\n  overflow: hidden; }\n\n.active {\n  text-align: center; }\n\nimg {\n  display: block;\n  margin: 0 auto; }\n\n.carousel-caption {\n  top: 0px; }\n"
 
 /***/ },
 
-/***/ 246:
+/***/ 247:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -502,7 +511,7 @@ webpackJsonp([0],{
 	    FooterComponent = __decorate([
 	        core_1.Component({
 	            selector: "Footer",
-	            styles: [__webpack_require__(247)],
+	            styles: [__webpack_require__(248)],
 	            template: "\n  <footer>\n    <div class=\"container\">\n      <div class=\"profile\">\n        <img src=\"{{gravatar}}\" alt=\"Joseph Vano\" title=\"Joseph Vano\" />\n        <div class=\"details\">\n          <ul>\n            <li>\n              Created by Joey Vano\n            </li>\n            <li>\n              <strong>email</strong> joseph[at]vano[dot]io\n            </li>\n            <li>\n              <strong>profile</strong> <a href=\"vano.io\">vano.io</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"icons\">\n        Menu icons made by <a target=\"_blank\" href=\"http://www.freepik.com\" title=\"Freepik\">Freepik</a> from <a target=\"_blank\" href=\"http://www.flaticon.com\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0/\" title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>\n      </div>\n    </div>\n  </footer>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -514,14 +523,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 247:
+/***/ 248:
 /***/ function(module, exports) {
 
-	module.exports = "footer {\n  margin: 200px 0 0;\n  padding: 50px 0 200px;\n  background-color: #c9cdcc;\n  position: relative;\n  color: #3c4d67; }\n  footer .icons {\n    position: absolute;\n    bottom: 10px;\n    right: 10px; }\n  footer .profile {\n    float: left;\n    width: 400px; }\n    footer .profile ul {\n      list-style-type: none;\n      padding: 10px 0 0 0; }\n    footer .profile img {\n      display: block;\n      float: left;\n      margin-right: 20px;\n      border-radius: 50%;\n      border: solid 2px #3c4d67; }\n"
+	module.exports = "footer {\n  margin: 200px 0 0;\n  padding: 50px 0 200px;\n  background-color: #c9cdcc;\n  position: relative;\n  color: #3c4d67; }\n  footer .icons {\n    position: absolute;\n    bottom: 10px;\n    right: 10px;\n    padding: 20px; }\n  footer .profile {\n    float: left;\n    width: 400px; }\n    footer .profile ul {\n      list-style-type: none;\n      padding: 10px 0 0 0; }\n    footer .profile img {\n      display: block;\n      float: left;\n      margin-right: 20px;\n      border-radius: 50%;\n      border: solid 2px #3c4d67; }\n"
 
 /***/ },
 
-/***/ 248:
+/***/ 249:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -541,7 +550,7 @@ webpackJsonp([0],{
 	    RegistryComponent = __decorate([
 	        core_1.Component({
 	            selector: "Registry",
-	            styles: [__webpack_require__(249)],
+	            styles: [__webpack_require__(250)],
 	            template: "\n  <div id=\"gifts\" class=\"area\">\n    <div class=\"container\">\n      <h2>Gifts</h2>\n      <p>You may have noticed by now that we have not registered for gifts. As we have been cohabitating for the last five years, we have just about all we need from a typical wedding registry. If you wish to present us with a gift, we currently accept cash or check. Come back soon if you wish to give a digital gift.</p>\n      <p>Joey has been working tirelessly to get this website up and running in time for the invitations to go out, and some minor improvements will be implemented as our big day gets closer!</p>\n    </div>\n  </div>\n \n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -553,21 +562,21 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 249:
+/***/ 250:
 /***/ function(module, exports) {
 
 	module.exports = ""
 
 /***/ },
 
-/***/ 250:
+/***/ 251:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 259:
+/***/ 260:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -590,7 +599,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 260:
+/***/ 261:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(232);

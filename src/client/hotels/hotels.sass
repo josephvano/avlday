@@ -1,22 +1,36 @@
 @import "../styles/common";
 
-aside
-  float: left
-  margin-right: 50px
-  padding-top: 10px
+#hotels
+
+.container
+  padding: 0
+  background: transparent url("/images/grandbohemian.jpg") 50% 0 no-repeat
 
 section
-  float: left
-  width: 700px
+  background-color: rgba(60,77,103,.7)
+  color: $grey-1
+  padding: 20px
+  +clearfix
+
+a, a:link
+  color: White
+  font-weight: bold
+
+a:hover
+  color: $yellow-1
+  text-decoration: underline
+
+h2, h3, h4
+  color: White
 
 img
-  width: 300px
   border: solid 2px $grey-1
   border-radius: 2px
 
 .hotels-list
   float: left
-  width: 350px
+  margin: 0 10px 10px 0
+  width: 42%
 
   ul
     list-style-type: none
@@ -30,3 +44,4 @@ img
     li
       float: left
       margin-right: 10px
+      margin-bottom: 10px
