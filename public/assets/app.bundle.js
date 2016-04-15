@@ -179,7 +179,7 @@ webpackJsonp([0],{
 	        var isOn = $nav.hasClass("affix");
 	        // magic number to account when position: fixed is on and takes
 	        // away height
-	        var buffer = isOn ? 200 : 400;
+	        var buffer = isOn ? 150 : 350;
 	        $("html body").animate({
 	            scrollTop: top - buffer
 	        });
@@ -517,7 +517,7 @@ webpackJsonp([0],{
 /***/ 247:
 /***/ function(module, exports) {
 
-	module.exports = "footer {\n  margin: 200px 0 0;\n  padding: 50px 0;\n  background-color: #c9cdcc;\n  position: relative;\n  color: #3c4d67; }\n  footer .icons {\n    position: absolute;\n    bottom: 10px;\n    right: 10px; }\n  footer .profile {\n    float: left;\n    width: 400px; }\n    footer .profile ul {\n      list-style-type: none;\n      padding: 10px 0 0 0; }\n    footer .profile img {\n      display: block;\n      float: left;\n      margin-right: 20px;\n      border-radius: 50%;\n      border: solid 2px #3c4d67; }\n"
+	module.exports = "footer {\n  margin: 200px 0 0;\n  padding: 50px 0 200px;\n  background-color: #c9cdcc;\n  position: relative;\n  color: #3c4d67; }\n  footer .icons {\n    position: absolute;\n    bottom: 10px;\n    right: 10px; }\n  footer .profile {\n    float: left;\n    width: 400px; }\n    footer .profile ul {\n      list-style-type: none;\n      padding: 10px 0 0 0; }\n    footer .profile img {\n      display: block;\n      float: left;\n      margin-right: 20px;\n      border-radius: 50%;\n      border: solid 2px #3c4d67; }\n"
 
 /***/ },
 

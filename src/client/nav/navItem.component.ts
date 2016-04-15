@@ -29,7 +29,7 @@ export class NavItemComponent{
     
     // magic number to account when position: fixed is on and takes
     // away height
-    let buffer = isOn ? 200 : 400; 
+    let buffer = isOn ? 150 : 350; 
 
     $("html body").animate({
       scrollTop:  top - buffer
