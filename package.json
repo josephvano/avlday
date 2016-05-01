@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp",
-    "start": "node lib/server.js",
+    "start": "node src/server/register.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "webpack --progress --colors",
-    "watch:pack": "webpack --progress --colors --watch"
+    "watch:pack": "webpack --progress --colors --watch",
+    "watch:web": "nodemon src/server/register.js"
   },
   "author": "joseph@vano.io",
   "license": "ISC",
