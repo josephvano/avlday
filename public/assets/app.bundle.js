@@ -43,14 +43,15 @@ webpackJsonp([0],{
 	var photos_component_1 = __webpack_require__(245);
 	var footer_component_1 = __webpack_require__(247);
 	var registry_component_1 = __webpack_require__(249);
+	var brunch_component_1 = __webpack_require__(846);
 	var MainComponent = (function () {
 	    function MainComponent() {
 	    }
 	    MainComponent = __decorate([
 	        core_1.Component({
 	            selector: "Main",
-	            directives: [header_component_1.HeaderComponent, nav_component_1.NavComponent, reception_component_1.ReceptionComponent, hotels_component_1.HotelsComponent, music_component_1.MusicComponent, photos_component_1.PhotosComponent, splash_component_1.SplashComponent, footer_component_1.FooterComponent, registry_component_1.RegistryComponent],
-	            template: "\n  <Header></Header>\n  <MainNav></MainNav>\n  <Splash></Splash>\n  <Reception></Reception>\n  <Hotels></Hotels>\n  <Music></Music>\n  <Photos></Photos>\n  <Registry></Registry>\n  <Footer></Footer>\n  "
+	            directives: [header_component_1.HeaderComponent, nav_component_1.NavComponent, reception_component_1.ReceptionComponent, hotels_component_1.HotelsComponent, music_component_1.MusicComponent, photos_component_1.PhotosComponent, splash_component_1.SplashComponent, footer_component_1.FooterComponent, registry_component_1.RegistryComponent, brunch_component_1.BrunchComponent],
+	            template: "\n  <Header></Header>\n  <MainNav></MainNav>\n  <Splash></Splash>\n  <Reception></Reception>\n  <Hotels></Hotels>\n  <Music></Music>\n  <Photos></Photos>\n  <Registry></Registry>\n  <Brunch></Brunch>\n  <Footer></Footer>\n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], MainComponent);
@@ -551,7 +552,7 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: "Registry",
 	            styles: [__webpack_require__(250)],
-	            template: "\n  <div id=\"gifts\" class=\"area\">\n    <div class=\"container\">\n      <h2>Gifts</h2>\n      <p>You may have noticed by now that we have not registered for gifts. As we have been cohabitating for the last five years, we have just about all we need from a typical wedding registry. If you wish to present us with a gift, we currently accept cash or check. Come back soon if you wish to give a digital gift.</p>\n      <p>Joey has been working tirelessly to get this website up and running in time for the invitations to go out, and some minor improvements will be implemented as our big day gets closer!</p>\n    </div>\n  </div>\n \n  "
+	            template: "\n  <div id=\"gifts\" class=\"area\">\n    <div class=\"container\">\n      <h2>Gifts</h2>\n      <p>You may have noticed by now that we have not registered for gifts. As we have been cohabitating for the last five years, we have just about all we need from a typical wedding registry. If you wish to present us with a gift, we currently accept cash or check. Come back soon if you wish to give a digital gift.</p>\n    </div>\n  </div>\n \n  "
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], RegistryComponent);
@@ -604,6 +605,39 @@ webpackJsonp([0],{
 
 	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(232);
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+
+/***/ 846:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(23);
+	var webLink_component_1 = __webpack_require__(239);
+	var BrunchComponent = (function () {
+	    function BrunchComponent() {
+	    }
+	    BrunchComponent = __decorate([
+	        core_1.Component({
+	            selector: "Brunch",
+	            directives: [webLink_component_1.MapLinkComponent, webLink_component_1.WebLinkComponent],
+	            template: "\n  <div class=\"area\">\n    <div class=\"container\">\n      <h2>Brunch</h2>\n      <p>Join us for a send off brunch the day after the wedding hosted by the mother and father of the bride. </p>\n      <p>Brunch will be from 10am - 11:30am at <a href=\"http://www.parisbistroparkave.com/\">Paris Bistro</a> located in Winter Park.  </p>\n\n      <MapLink link=\"https://goo.gl/maps/8YB1weZCjvS2\"></MapLink>\n      <WebLink link=\"http://www.parisbistroparkave.com/\"></WebLink>\n    </div>\n  </div>\n  "
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], BrunchComponent);
+	    return BrunchComponent;
+	}());
+	exports.BrunchComponent = BrunchComponent;
+
 
 /***/ }
 
